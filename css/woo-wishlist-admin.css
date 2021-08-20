@@ -1,0 +1,76 @@
+#wpadminbar #wp-admin-bar-upgrade-villatheme .ab-sub-wrapper, #wpadminbar #wp-admin-bar-upgrade-villatheme .woo-boost-sales-issue-counter {
+    background: #E65100;
+}
+
+#wpadminbar .ab-submenu .wmc-notice a.ab-item {
+    color: #fff !important;
+}
+
+#wpadminbar .woo-boost-sales-issue-counter {
+    display: inline;
+    padding: 1px 7px 1px 6px !important;
+    border-radius: 50%;
+    color: #fff;
+}
+
+tr.wbs_exclude_product {
+    background-color: #fff;
+}
+
+tr.wbs_exclude_product .vi-ui.multiple.search.dropdown > input.search {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 27px;
+    font-size: 13px;
+}
+
+.vi-ui.tabular.menu .item a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.wbs-field-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    background: #FF8A65;
+    padding: 10px;
+    color: #fff;
+}
+
+.select2-search__field {
+    width: 100% !important;
+}
+
+table.wp-list-table td.column-up-sells > span.select2.select2-container {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.woo-wishlist a {
+    text-decoration: none;
+    color: #0e1212;
+}
+
+td.wishlist-checkbox {
+    display: block;
+}
+
+.create-coupon {
+    display: none;
+}
+
+button.wn-submit {
+    margin-top: 15px !important;
+}
+
+.vi-ui.primary.button {
+    margin-top: 10px;
+}
+
+a.vi_wcwl_custom_design {
+    text-decoration: underline;
+    color: #0b7dda;
+    font-size: 17px;
+}

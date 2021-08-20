@@ -1,0 +1,598 @@
+.vi-wl-h-loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #16161a;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+My wishlist page css section
+*/
+
+.vi-wl-my-wishlist-top-bar-add {
+    background-color: #131418;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.vi-wl-my-wishlist-top-bar button:hover {
+    background-color: #373d47;
+    color: red;
+}
+
+.vi-wl-h-select-wishlist select {
+    width: 100%;
+    /*padding: 10px;*/
+    /*margin: 5px 0;*/
+    /*border-radius: 5px;*/
+}
+
+/*
+Button style
+*/
+
+.vi-wl-h-btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.vi-wl-h-success {
+    background-color: #04AA6D;
+}
+
+/* Green */
+.vi-wl-h-success:hover {
+    background-color: #46a049;
+}
+
+.vi-wl-h-info {
+    background-color: #2196F3;
+}
+
+/* Blue */
+.vi-wl-h-info:hover {
+    background: #0b7dda;
+}
+
+.vi-wl-h-warning {
+    background-color: #ff9800;
+}
+
+/* Orange */
+.vi-wl-h-warning:hover {
+    background: #e68a00;
+}
+
+.vi-wl-h-danger {
+    background-color: #f44336;
+}
+
+/* Red */
+.vi-wl-h-danger:hover {
+    background: #da190b;
+}
+
+.vi-wl-h-default {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+/*
+Modal box create
+*/
+
+
+/* The popup form - hidden by default */
+.vi-wl-h-form-popup {
+    display: none;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Add styles to the form container */
+.vi-wl-h-form-form-container {
+    border: 1px solid #CCC6C1;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Full-width input fields */
+.vi-wl-h-form-form-container input[type=text], .vi-wl-h-form-form-container textarea {
+    width: 100%;
+    margin: 5px 0 22px 0;
+    border: 1px solid #e4dacb;
+    background: #ffffff;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* When the inputs get focus, do something */
+.vi-wl-h-form-form-container input[type=text]:focus, .vi-wl-h-form-form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.vi-wl-h-form-form-container .vi-wl-h-form-btn-add, .vi-wl-h-form-btn-update {
+    background-color: #323a37;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 400;
+}
+
+/* Add a red background color to the cancel button */
+.vi-wl-h-form-form-container .vi-wl-h-form-btn-cancel {
+    background-color: #ca2828b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 400;
+}
+
+/* Add some hover effects to buttons */
+.vi-wl-h-form-form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/*
+custom check box
+*/
+/* Customize the label (the container) */
+.vi-wl-h-custom-radio {
+    margin: 4px;
+    position: relative;
+    padding-left: 21px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.vi-wl-h-custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.vi-wl-h-custom-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.vi-wl-h-custom-radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.vi-wl-h-custom-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.vi-wl-h-custom-radio .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+/*
+Alert style
+*/
+
+.vi-wl-h-alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.vi-wl-h-close-btn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.vi-wl-h-close-btn:hover {
+    color: black;
+}
+
+.vi-wl-single-bottom-bar {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.vi-wl-single-bottom-bar > span {
+    margin: 0 1px 0 1px;
+}
+
+
+.hentry .entry-content .vi-wl-single-bottom-bar a {
+    text-decoration: none;
+    outline: none;
+}
+
+td.vi-wl-h-table-product-image img {
+    margin: auto;
+}
+
+.vi-wl-h-single-top-bar button {
+    background-color: #323a37;
+    color: #fdfdfd;
+    border-radius: 5px;
+    margin: 2px 0;
+    font-weight: 400;
+}
+
+.vi-wl-h-single-top-bar .vi-wl-h-single-top-bar-vote .vi-wl-positive-vote, .vi-wl-clone {
+    cursor: pointer;
+    color: #fdfdfd;
+}
+
+.vi-wl-h-single-top-bar {
+    margin: 5px 0;
+}
+
+.vi-wl-h-single-top-bar i {
+    font-size: 12px;
+    vertical-align: baseline;
+}
+
+.vi-wl-single-bottom-bar-fb,
+.vi-wl-single-bottom-bar-tb,
+.vi-wl-single-bottom-bar-tw,
+.vi-wl-single-bottom-bar-prs,
+.vi-wl-single-bottom-bar-isg,
+.vi-wl-single-bottom-bar-copy i {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.vi-wl-single-bottom-bar-fb i.vi-wl-facebook {
+    color: #087CEA;
+}
+
+.vi-wl-single-bottom-bar-tb i.vi-wl-tumblr {
+    color: #3F4F63;
+}
+
+.vi-wl-single-bottom-bar-tw i.vi-wl-twitter-sign {
+    color: #1DA1F2;
+}
+
+.vi-wl-single-bottom-bar-prs i.vi-wl-pinterest {
+    color: #DF1A26;
+}
+
+.vi-wl-single-bottom-bar-isg i.vi-wl-instagram {
+    color: #F27C2A;
+}
+
+
+.vi-woo-wl-widget-item {
+    border-bottom: 1px solid #0000000C;
+}
+
+.vi-woo-wl-widget-date {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.vi-woo-wl-widget-author {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+/*
+CUSTOM SELECT OPTION
+*/
+.vi-wl-h-table-custom-select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+select.vi-wl-h-table-custom-select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #131818;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+/* Arrow */
+.vi-wl-h-table-custom-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #323a37;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+/* Transition */
+.vi-wl-h-table-custom-select:hover::after {
+    color: #f39c12;
+}
+
+td.vi-wl-h-table-product-title {
+    vertical-align: middle;
+}
+
+
+/*new table*/
+.vi-wcwl-h-product-table-atc form .quantity input {
+
+}
+
+.vi-wcwl-h-product-table-header {
+    background-color: #327a81;
+    color: white;
+    font-size: 1.5em;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.vi-wcwl-h-product-table-wishlist {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.vi-wl-h-table-product-remove i {
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+}
+
+.vi-wcwl-h-product-table-mobile-price {
+    display: none;
+}
+
+.vi-wcwl-h-product-table-button-mobile {
+    display: none;
+}
+
+.hentry .entry-content a {
+    text-decoration: none;
+}
+
+.vi-wl-h-table-product-rsptable-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    background: #323a37;
+    color: #dacdcd;
+}
+
+.vi-wl-h-table-product-rsptable-header-image {
+    width: 20%;
+}
+
+.vi-wl-h-table-product-rsptable-header-title-price {
+    width: 40%;
+}
+
+.vi-wl-h-table-product-rsptable-header-atc {
+    width: 30%;
+}
+
+.vi-wl-h-table-product-rsptable-header-remove {
+    width: 10%;
+}
+
+@media screen and (max-width: 500px) {
+    .vi-wl-h-single-top-bar button {
+        width: 100%;
+    }
+}
+
+/*
+new table
+*/
+
+/*  ****** Responsive Table ***** */
+.vi-wl-h-table-product-rsptable {
+    color: #616161;
+    display: table;
+    /*margin: 0 0 1em 0;*/
+    width: 100%;
+}
+
+.vi-wcwl-h-table-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    /*border-bottom: 1px solid #dadce1;*/
+}
+
+.vi-wcwl-h-table-image {
+    width: 20%;
+}
+
+.vi-wcwl-h-table-title-price {
+    display: flex;
+    flex: auto;
+    align-items: center;
+}
+
+.vi-wcwl-h-table-title-price-info {
+    width: 40%;
+}
+
+.vi-wcwl-h-table-add-to-cart-form {
+    width: 30%;
+}
+
+.vi-wl-h-table-product-rsptable .quantity {
+    display: inline;
+    margin: 0;
+}
+
+.vi-wl-h-table-product-rsptable .vi-wcwl-h-table-show-add-to-cart-form table:not( .has-background ) tbody tr td, fieldset, fieldset legend {
+    background: transparent;
+}
+
+.vi-wl-h-table-product-rsptable .vi-wcwl-h-table-add-to-cart-form .quantity input,
+.vi-wl-h-table-product-rsptable .vi-wcwl-h-table-show-add-to-cart-form .quantity input {
+    border: 1px solid #b4b6b7;
+    padding: 1px;
+    width: 40px;
+    min-height: unset;
+    max-height: unset;
+    height: 30px;
+}
+
+.vi-wl-h-table-product-rsptable .vi-wcwl-h-table-add-to-cart-form form button,
+.vi-wl-h-table-product-rsptable .vi-wcwl-h-table-show-add-to-cart-form form button {
+    padding: 2px 12px;
+    margin: 0;
+    line-height: normal;
+    min-height: unset;
+    max-height: unset;
+    height: 30px;
+}
+
+.vi-wl-h-table-product-rsptable .vi-wcwl-h-table-show-add-to-cart-form table td, table th {
+    padding: 3px 0;
+}
+
+.vi-wl-h-table-product-rsptable .vi-wcwl-h-table-add-to-cart-form .added_to_cart {
+    font-size: 12px;
+    padding: 6px 4px 4px 4px;
+    margin-left: 3px;
+}
+
+.added_to_cart:after {
+    display: none;
+}
+
+button.vi-wcwl-fake-btn {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 0.26rem 0.3rem;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: unset;
+    min-height: unset;
+    text-transform: unset;
+}
+
+.vi-wl-h-table-product-rsptable .vi-wcwl-table-select-grouped {
+    font-size: 12px;
+}
+
+.vi-wcwl-edit-form-note {
+    color: rgba(208, 22, 22, 0.7);
+    margin-bottom: 0;
+}
+
+.vi-wl-h-table-product-rsptable form {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 599px) {
+    .vi-wcwl-h-table-title-price {
+        display: block;
+        width: 60%;
+        flex: unset;
+    }
+
+    .vi-wl-h-table-product-rsptable-header {
+        display: none;
+    }
+
+    .vi-wcwl-h-table-title-price-info, .vi-wcwl-h-table-add-to-cart-form {
+        width: unset;
+        margin-bottom: 5px;
+    }
+
+    .vi-wcwl-h-table-image {
+        width: 30%;
+    }
+
+    .vi-wcwl-h-table-add-to-cart-form table {
+        margin: 0;
+
+    }
+}
+

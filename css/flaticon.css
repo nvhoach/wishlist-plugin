@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon_root.ttf?1827bbe620cec438ae123d68824334b3") format("truetype"),
+url("../fonts/flaticon_root.woff?1827bbe620cec438ae123d68824334b3") format("woff"),
+url("../fonts/flaticon_root.woff2?1827bbe620cec438ae123d68824334b3") format("woff2"),
+url("../fonts/flaticon_root.eot?1827bbe620cec438ae123d68824334b3#iefix") format("embedded-opentype"),
+url("../fonts/flaticon_root.svg?1827bbe620cec438ae123d68824334b3#flaticon") format("svg");
+}
+
+i[class^="vi-wl-"]:before, i[class*=" vi-wl-"]:before {
+    font-family: flaticon, serif !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.vi-wl-exit:before {
+    content: "\f101";
+}
+.vi-wl-remove:before {
+    content: "\f102";
+}
+.vi-wl-cancel:before {
+    content: "\f103";
+}
+.vi-wl-copy:before {
+    content: "\f104";
+}
+.vi-wl-email:before {
+    content: "\f105";
+}
+.vi-wl-plus:before {
+    content: "\f106";
+}
+.vi-wl-facebook:before {
+    content: "\f107";
+}
+.vi-wl-tumblr:before {
+    content: "\f108";
+}
+.vi-wl-twitter-sign:before {
+    content: "\f109";
+}
+.vi-wl-pinterest:before {
+    content: "\f10a";
+}
+.vi-wl-instagram:before {
+    content: "\f10b";
+}
+.vi-wl-clone:before {
+    content: "\f10c";
+}
+.vi-wl-heart:before {
+    content: "\f10d";
+}
+.vi-wl-like:before {
+    content: "\f10e";
+}
+.vi-wl-pencil:before {
+    content: "\f10f";
+}
+.vi-wl-like-1:before {
+    content: "\f110";
+}
+.vi-wl-shopping-cart:before {
+    content: "\f111";
+}
+.vi-wl-star:before {
+    content: "\f112";
+}
+.vi-wl-star-1:before {
+    content: "\f113";
+}
+.vi-wl-favorite:before {
+    content: "\f114";
+}
+.vi-wl-favorite-1:before {
+    content: "\f115";
+}
+.vi-wl-favorite-2:before {
+    content: "\f116";
+}
+.vi-wl-favorite-3:before {
+    content: "\f117";
+}
+.vi-wl-wishlist:before {
+    content: "\f118";
+}
+.vi-wl-favorite-4:before {
+    content: "\f119";
+}
+.vi-wl-favorites:before {
+    content: "\f11a";
+}
+.vi-wl-favorites-1:before {
+    content: "\f11b";
+}
+.vi-wl-add-to-favorites:before {
+    content: "\f11c";
+}
+.vi-wl-favorite-5:before {
+    content: "\f11d";
+}
+.vi-wl-delete:before {
+    content: "\f11e";
+}
